@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var mongo = require('mongodb');
-var db = require('monk')('localhost/nodeblog');
+var db = require('monk')('ds049496.mlab.com:49496/nodeblog');
 
 router.get('/show/:id', function(req, res, next){
   var posts = db.get('posts');
